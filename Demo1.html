@@ -65,6 +65,251 @@ In 2008, &nbsp work on HTML5 began as a collaboration between W3C and WHATWG (We
 <li>Inserts a horizontal line across the page.</li>
 <li>Used to separate sections of content.</li>
 </ul>
-</p>
 <hr>
+<h4>6. Bold Tag</h4>
+<ul>
+<li>Makes the text bold.</li>
+<li> Used for styling, no extra importance given to the text.</li>
+<p>eg:</p>
+<p>&lt;b&gt;This is bold&lt;/b&gt;</p>
+<b>This is bold</b>
+</ul>
+<hr>
+<h4>7.Strong Importance</h4>
+<ul>
+<li>Makes the text bold and conveys importance or emphasis.</li>
+<li>Carries sematic meaning</li>
+<p>eg :<p>
+<p>&lt;strong&gt;This is important text&lt;/strong&gt;</p>
+<strong>This is important text</strong>
+</ul>
+<hr>
+
+<h4>8.Italic</h4>
+<ul>
+<li>Makes the text italic.</li>
+<li>Used for styling, like technical terms or names.</li>
+<p>eg :<p>
+<p>&lt;i&gt;This is italic text&lt;/i&gt;</p>
+<i>This is italic text</i>
+</ul>
+<hr>
+
+<h4>9.Emphasis</h4>
+<ul>
+<li>Emphasizes the text and makes it italic.</li>
+<li>Has semantic meaning (stress or importance).</li>
+<p>eg :<p>
+<p>&lt;em&gt;This is emphasized text&lt;/em&gt;</p>
+<em>This is emphasized text</em>
+</ul>
+<hr>
+
+<h4>10.Underline</h4>
+<ul>
+<li>Underlines the text.</li>
+<li>Used rarely, often avoided in modern web design.</li>
+<p>eg :<p>
+<p>&lt;em&gt;This is underlined text&lt;/em&gt;</p>
+<u>This is underlined text</u>
+</ul>
+<hr>
+
+<h4>11.Quotation Block</h4>
+<ul>
+<li>Displays a block-level quotation (usually indented).</li>
+<p>eg :<p>
+<p>&lt;blockquote&gt;This is a long quoted section.&lt;/blockquote&gt;</p>
+<blockquote>This is a long quoted section.</blockquote>
+</ul>
+<hr>
+
+<h4>12.Inline Quotation</h4>
+<ul>
+<li>Displays short quotes inside double quotation marks.</li>
+<p>eg :<p>
+<p>&lt;q&gt;This is a short quote.&lt;/q&gt;</p>
+<q>This is a short quote.</q>
+</ul>
+<hr>
+
+
+<h4>13.Strike Through (Deleted Text)</h4>
+<ul>
+<li>Shows text that has been deleted or no longer valid.</li>
+<p>eg :<p>
+<p>&lt;del&gt;This text is deleted.&lt;/del&gt;</p>
+<del>This text is deleted.</del>
+</ul>
+<hr>
+
+<h4>14.Strike Through (No Longer Accurate)</h4>
+<ul>
+<li>Used for inaccurate or outdated text.</li>
+<p>eg :<p>
+<p>&lt;strike&gt;This text is deleted.&lt;/strike&gt;</p>
+<strike>This is incorrect text.</strike>
+</ul>
+<hr>
+
+<h4>15.Small Text</h4>
+<ul>
+<li>Makes the text appear smaller than normal.</li>
+<p>eg :<p>
+<p>&lt;smalle&gt;This is small text.&lt;/small&gt;</p>
+<small>This is small text.</small>
+</ul>
+<hr>
+
+<h4>16.Big Text (Deprecated)</h4>
+<ul>
+<li>Makes the text appear larger than normal.</li>
+<li>This tag is deprecated in HTML5. Use CSS instead.</li>
+<p>eg :<p>
+<p>&lt;big&gt;This is big text.&lt;/big&gt;</p>
+<big>This is big text.</big>
+</ul>
+<hr>
+
+<h4>17.Subscript</h4>
+<ul>
+<li>Displays text below the normal line (subscript).</li>
+<p>eg :<p>
+<p>&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</p>
+<p>H<sub>2</sub>O</p>
+</ul>
+<hr>
+
+<h4>18.Superscript</h4>
+<ul>
+<li>Displays text above the normal line (superscript).</li>
+<p>eg :<p>
+<p>&lt;p&gt;H&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</p>
+<p>H<sup>2</sup></p>
+</ul>
+<hr>
+
+<h3>Attributes</h3>
+<ul>
+<p>Attributes provide additional information about HTML elements. They are always specified in the start tag and come in name/value pairs like name="value".</p>
+<p>Synatx :<p>
+<p>&lt;p id="intro" class="highlight" title="About Us"&lt;/p&gt;</p>
+<p id="intro" class="highlight" title="About Us">Welcome to our website!</p>
+</ul><hr>
+
+<h4>19.Images Tag</h4>
+<ul>
+<p>The image tag is used to embed images in a webpage. It is an empty tag (doesn't have a closing tag).</p>
+<p>eg :<p>
+<p>&lt;img src="image.jpg" alt="Descriptiont" width="300" height="200"&gt;</p>
+<img src="image.jpg" alt="Description" width="300" height="200">
+</ul>
+
+<h5>Important Attributes:</h5>
+
+<ul>
+<li>src- Path to the image (required).</li>
+<li>alt- Alternate text for accessibility</li>
+<li>width- Width of the image (in px or %)</li>
+<li>height- Height of the image<br></li>
+<li>title- Tooltip on hover</li>
+<li>loading- Lazy loading (lazy, eager, auto)</li>
+<li>style- Inline styling (optional)</li>
+</ul>
+<hr>
+
+<h4>20 HTML (Anchor) Tag</h4>
+<ul>
+<p>The anchor tag defines a hyperlink, used to navigate to another page, file, or section.</p>
+<p>eg :<p>
+<pre>
+&lt;a href="resume.pdf" download&gt;Download Resume&lt;/a&gt;
+&lt;a href="https://google.com" target="_blank" title="Go to Google"&gt;Google&lt;/a&gt;
+</pre>
+<a href="resume.pdf" download>Download Resume</a>
+<a href="https://google.com" target="_blank" title="Go to Google">Google</a>
+</ul>
+
+<h5>Important Attributes:</h5>
+
+<ul>
+<li>_self - 	Opens in same tab (default)</li>
+<li>_blank - 	Opens in new tab</li>
+<li>_parent - Opens in parent frame</li>
+<li>_top - Opens in full window</li>
+</ul>
+<hr>
+
+
+
+<h3>HTML Lists</h3>
+
+<p>HTML supports three types of lists:</p>
+<ol>
+<li>Ordered List</li>
+<li>Unordered List</li>
+<li>Description List</li>
+</ol>
+
+<h4>21.Ordered List</h4>
+<p>Used when the order of items matters (like steps, rankings).</p>
+<p>Eg :</p>
+
+<pre>
+&lt;ol type="A" start="3"&gt;
+  &lt;li&gt;Item One&lt;/li&gt;
+  &lt;li&gt;Item Two&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<ol type="A" start="3">
+  <li>Item One</li>
+  <li>Item Two</li>
+</ol>
+<hr>
+
+<h5>type Attribute (Representation):</h5>
+<ul>
+<li>1 - 1, 2, 3, ... (default)</li>
+<li>A - A, B, C, ...</li>
+<li>a - a, b, c, ...</li>
+<li>I - I, II, III, ...</li>
+<li>i - i, ii, iii, ...</li>
+</ul>
+<hr>
+
+<h4>22.Unrdered List</h4>
+<p>Used when the order doesn’t matter (like groceries, features).</p>
+<p>Eg :</p>
+
+<pre>
+&lt;ul type="sqaure"&gt;
+   &lt;li&gt;HTML&lt;/li&gt;
+   &lt;li&gt;CSS&lt;/li&gt;
+   &lt;li&gt;JS&lt;/li&gt;
+   &lt;li&gt;REACT JS&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<ul type="sqaure">
+   <li>HTML</li>
+   <li>CSS</li>
+   <li>JS</li>
+   <li>REACT JS</li>
+</ul>
+
+<h5>type Attribute (Bullet Style):</h5>
+<ul>
+<li>disc- 	● (default)(default)</li>
+<li>circle - 	○</li>
+<li>sqaure - 	■</li>
+</ul>
+
+<hr>
+
+
+
+
+
+
 </html>
