@@ -307,8 +307,223 @@ In 2008, &nbsp work on HTML5 began as a collaboration between W3C and WHATWG (We
 
 <hr>
 
+<h4>23.Description List</h4>
+<p>A description list is used to display a list of terms and their corresponding descriptions. It is useful for things like dictionaries, glossaries, FAQs, or metadata descriptions.</p>
+<h5>Tags used</h5>
+<p>&lt;dl&gt; -Description List container</p>
+<p>&lt;dt&gt; -Description Term</p>
+<p>&lt;dd&gt; -Description Defination</p>
+
+<p>eg:</p>
+<pre>
+&lt;dl&gt;
+	&lt;dt&gt;HTML&lt;/dt&gt;
+	&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+	&lt;dt&gt;CSS&lt;/dt&gt;
+	&lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+	&lt;dt&gt;JS&lt;/dt&gt;
+	&lt;dd&gt;Prigraming Langauge uded to make web pages interactive&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p><i>Output:</i></p>
+
+<dl>
+	<dt>HTML</dt>
+	<dd>HyperText Markup Language</dd>
+	<dt>CSS</dt>
+	<dd>Cascading Style Sheets</dd>
+	<dt>JS</dt>
+	<dd>Prigraming Langauge uded to make web pages interactive</dd>
+</dl>
+<hr>
+
+<h4>24.Nested Lists</h4>
+<p>
+
+<p>A nested list means placing one list inside another. You can nest:</p>
+<ul>
+<li>An unordered list inside an ordered list</li>
+<li>An ordered list inside an unordered list</li>
+<li>Any combination of &lt;ul&gt;, &lt;ol&gt;, and <&lt;l&gt; </li>
+</ul>
+<p>Eg:</p>
+<pre>
+&lt;ol&gt;
+  &lt;li&gt;Frontend Technologies
+    &lt;ul&gt;
+      &lt;li&gt;HTML&lt;/li&gt;
+      &lt;li&gt;CSS&lt;/li&gt;
+      &lt;li&gt;JS&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;Backend Technologies
+    &lt;ol&gt;
+      &lt;li&gt;Node.js&lt;/li&gt;
+      &lt;li&gt;Java&lt;/li&gt;
+      &lt;li&gt;Python&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<p><i>output:</i></p>
+<ol>
+<li>Frontend Technologies
+  <ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JS</li>
+   </ul>
+ </li>
+<li>Backend Technologies
+  <ol>
+	 <li>Node.js</li>
+	<li>Java</li>
+	<li>Python</li>
+  </ol>
+ </li>
+</ol>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Tags in HTML</title>
+</head>
+<body>
+
+<hr>
+<h3>25. Table Tags</h3>
+
+<p>HTML tables are used to organize data into rows and columns. Important tags include:</p>
+
+<ul>
+  <li><code>&lt;table&gt;</code> – Creates the table</li>
+  <li><code>&lt;tr&gt;</code> – Defines a table row</li>
+  <li><code>&lt;th&gt;</code> – Defines a header cell (bold and centered)</li>
+  <li><code>&lt;td&gt;</code> – Defines a regular data cell</li>
+  <li><code>&lt;caption&gt;</code> – Adds a title above the table</li>
+  <li><code>colspan</code> – Merges multiple columns</li>
+  <li><code>rowspan</code> – Merges multiple rows</li>
+</ul>
+
+<p><strong>Eg:</strong></p>
+
+<pre>
+&lt;table border="1"&gt;
+  &lt;caption&gt;Employee Schedule&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Day&lt;/th&gt;
+    &lt;th colspan="2"&gt;Time&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="2"&gt;Vinod&lt;/td&gt;
+    &lt;td&gt;Monday&lt;/td&gt;
+    &lt;td&gt;9 AM&lt;/td&gt;
+    &lt;td&gt;5 PM&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Tuesday&lt;/td&gt;
+    &lt;td&gt;10 AM&lt;/td&gt;
+    &lt;td&gt;4 PM&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><em>output:</em></p>
+
+<table border="1">
+  <caption>Employee Schedule</caption>
+  <tr>
+    <th>Name</th>
+    <th>Day</th>
+    <th colspan="2">Time</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Vinod</td>
+    <td>Monday</td>
+    <td>9 AM</td>
+    <td>5 PM</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>10 AM</td>
+    <td>4 PM</td>
+  </tr>
+</table>
+<hr>
 
 
+
+<h4>26.Audio</h4>
+<ul>
+<li>Used to embed sound content like music or audio streams on a webpage.</li>
+</ul>
+<pre>
+src             Path to the audio file
+controls        Adds audio controls (play, pause, volume)
+autoplay        Plays audio automatically when page loads
+loop            Repeats the audio
+muted           Mutes the audio
+preload         Defines how the audio is loaded (auto, metadata, none)
+</pre>
+
+
+<p>Eg:</p>
+<pre>
+&lt;p&gt;Listen my audio here
+&lt;audio controls autoplay loop muted&gt;
+  &lt;source src="myaudio.mp3"&gt;
+  Your Browser does not support the audio element.
+&lt;/audio&gt;
+</pre>
+<p>Output</p>
+<p>Listen my audio here
+<audio controls autoplay loop muted>
+<source src="myaudio.mp3">
+Your Browser does not support the audio element.
+</audio>
+</p>
+<hr>
+
+
+
+<h4>27S.Audio</h4>
+<ul>
+<li>The &lt;video&gt; tag is used to embed video files in an HTML document.</li>
+</ul>
+<pre>
+Attribute       Description
+src             Path to the video file
+controls        Adds video controls (play, pause, volume)
+autoplay        Plays video automatically when page loads
+loop            Repeats the video
+muted           Mutes the video
+poster          Shows an image before video plays
+width/height    Sets video dimensions
+preload         Preloads video data (auto, metadata, none)
+</pre>
+
+
+<p>Eg:</p>
+<pre>
+&lt;video width="400" height="300" controls autoplay muted loop poster="image.jpg"&gt;
+  &lt;source src="myvideo.mp4"&gt;
+  your browser does not support the video tag.
+&lt;/video&gt;
+</pre>
+
+<p>Output :</p>
+<video width="400" height="300" controls autoplay muted loop poster="image.jpg">
+<source src="myvideo.mp4">
+your browser does not support the video tag.
+</video>
+
+<hr>
+
+	
 
 
 
