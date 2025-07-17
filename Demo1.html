@@ -490,7 +490,7 @@ Your Browser does not support the audio element.
 
 
 
-<h4>27S.Audio</h4>
+<h4>27.Audio</h4>
 <ul>
 <li>The &lt;video&gt; tag is used to embed video files in an HTML document.</li>
 </ul>
@@ -523,8 +523,206 @@ your browser does not support the video tag.
 
 <hr>
 
+<h4>HTML Form Notes</h4>
+
+  <h4>HTML Form: Overview</h4>
+  <p>
+    An HTML &lt;form&gt; is used to collect user input. It contains different input fields defined by the &lt;input&gt; tag.
+  </p>
+  <p>
+    Example: <br>
+    &lt;form action="submit_form.php" method="post"&gt; <br>
+    &nbsp;&nbsp;&lt;!-- input fields go here --&gt;<br>
+    &lt;/form&gt;
+  </p>
+
+  <h4>Common Form Attributes</h4>
+  <table border="1">
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>action</td>
+      <td>URL where form data is sent</td>
+    </tr>
+    <tr>
+      <td>method</td>
+      <td>GET (visible in URL) or POST (hidden)</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Name of the form</td>
+    </tr>
+    <tr>
+      <td>target</td>
+      <td>Specifies where to display the response (_blank, _self, etc.)</td>
+    </tr>
+    <tr>
+      <td>autocomplete</td>
+      <td>On/off for auto-filling input fields</td>
+    </tr>
+  </table>
+<hr>
+
+  <h4>Single Line Text Field</h4>
+  <p>
+    Used to input a single line of text such as name.<br><br>
+    Example: <br>
+    &lt;label for="fullname"&gt;Full Name:&lt;/label&gt;<br>
+    &lt;input type="text" id="fullname" name="fullname" placeholder="Enter your name" required&gt;<br><br>
+
+<p>Output:<p>
+ <label  for="fullname">Full Name:</label>
+<input type="text" id="fullname+ name="fullname" placeholder="Enter your name" required><br><br>
+    Explanation:<br>
+    - type="text": defines a single-line input field<br>
+    - placeholder: displays hint text<br>
+    - required: makes the field mandatory
+  </p>
+<hr>
+
+  <h4>Password Field</h4>
+  <p>
+    Used to enter a password with hidden characters.<br><br>
+    Example: <br>
+    &lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+    &lt;input type="password" id="password" name="password" placeholder="Enter password" required&gt;<br><br>
+
+<p>Output:</p>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter password" required><br>
+<br>
+    Explanation:<br>
+    - type="password": hides input characters<br>
+    - placeholder: shows a hint<br>
+    - required: makes field mandatory
+  </p>
+<hr>
+
+  <h4>Email Field</h4>
+  <p>
+    Used to input a valid email address.<br><br>
+    Example: <br>
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" placeholder="Enter email" required&gt;<br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+    Explanation:<br>
+    - type="email": checks email format<br>
+    - required: mandatory field
+  </p>
+<hr>
+
+  <h4>Number Field</h4>
+  <p>
+    Used for numeric values like age.<br><br>
+    Example: <br>
+    &lt;label for="age"&gt;Age:&lt;/label&gt;
+    &lt;input type="number" id="age" name="age" min="1" max="100" required&gt;<br><br>
+
+<p>Output:</p>
+<label for="age">Age:</label>
+<input type ="number" id="age" name="age" min="1" max="100" required><br><br>
+    Explanation:<br>
+    - type="number": only numbers allowed<br>
+    - min/max: restricts range<br>
+    - required: must be filled in
+  </p>
+<hr>
+
+  <h4>Date Field</h4>
+  <p>
+    Allows users to select a date using a calendar picker.<br><br>
+    Example: <br>
+    &lt;label for="dob"&gt;Date of Birth:&lt;/label&gt;<br>
+    &lt;input type="date" id="dob" name="dob" required&gt;<br><br>
+
+
+<p>Output:</p>
+<label for=dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required><br><br>
+    Explanation:<br>
+    - type="date": shows date selector<br>
+    - required: makes it compulsory
+  </p>
+<hr>
+
+  <h4>Submit Button</h4>
+  <p>
+    Used to submit the form to the server.<br><br>
+    Example: <br>
+    &lt;input type="submit" value="Submit"&gt;<br><br>
+
+
+    Explanation:<br>
+    - type="submit": triggers form submission<br>
+    - value: text on button
+  </p>
+<hr>
+
+  <h4>Full Working Example</h4>
+  <p>
+    Complete example using all above fields:<br><br>
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html&gt;<br>
+    &lt;head&gt;<br>
+    &nbsp;&nbsp;&lt;title&gt;Form Example&lt;/title&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br><br>
+
+    &nbsp;&nbsp;&lt;h2&gt;Registration Form&lt;/h2&gt;<br><br>
+
+    &nbsp;&nbsp;&lt;form action="submit_form.php" method="post"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fullname"&gt;Full Name:&lt;/label&gt;&lt;br&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fullname" name="fullname" placeholder="Enter your name" required&gt;&lt;br&gt;&lt;br&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="password"&gt;Password:&lt;/label&gt;&lt;br&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" id="password" name="password" placeholder="Enter password" required&gt;&lt;br&gt;&lt;br&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" id="email" name="email" placeholder="Enter email" required&gt;&lt;br&gt;&lt;br&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="age"&gt;Age:&lt;/label&gt;&lt;br&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" id="age" name="age" min="1" max="100" required&gt;&lt;br&gt;&lt;br&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="dob"&gt;Date of Birth:&lt;/label&gt;&lt;br&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="date" id="dob" name="dob" required&gt;&lt;br&gt;&lt;br&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+    &nbsp;&nbsp;&lt;/form&gt;<br><br>
+
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+  </p>
+<p>Out put:</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form action="submit_form.php" method="post">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
 	
 
 
-
+</body>
 </html>
