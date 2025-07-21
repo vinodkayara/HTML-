@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+
+</head>
+
+  <fieldset>
+    <legend>Registration Form</legend>
+  <form action="submit_form.php" method="post">
+    <center>
+  <h2>Registration Form</h2></center>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    <span>Gender:</span>
+    
+    <input type="radio" id="Gender" name="gbtn">
+    <label for="Gender">Male</label>
+   
+    <input type="radio" id="Gender1" name="gbtn">
+     <label for="Gender1">Female</label>
+   
+    <input type="radio" id="Gender2" name="gbtn"> 
+     <label for="Gender2">Other</label>  <br><br>
+
+     <span>Skills:</span>
+     <input type="checkbox" id="skill1">
+     <label for="skill1">HTML</label>
+
+     <input type="checkbox" id="skill2">
+     <label for="skill2">CSS</label>
+
+     <input type="checkbox" id="skill3">
+     <label for="skill3">JS</label>
+
+     <input type="checkbox" id="skill4">
+     <label for="skill4">React JS</label><br><br>
+
+     <label for="file">Upload resume :</label>
+     <input type="file" id="file"><br><br>
+
+     <label>Proficiency in HTML</label>
+     <input type="range"><br><br>
+
+     <label>Proficiency in CSS</label>
+     <input type="range"><br><br>
+
+     <label>Proficiency in JS</label>
+     <input type="range"><br><br>
+
+     <label>Proficiency in React Js</label>
+     <input type="range"><br><br>
+
+
+    <label for="branch">Branch:</label>
+    <select>
+        <option>Choose Branch</option>
+        <option>CS</option>
+        <option>IS</option>
+        <option>AI&ML</option>
+        <option>EC</option>
+        <option>MECH</option>
+    </select><br><br>
+
+    <label for="add">Address:</label>
+    <textarea for="add">Enter your Address here </textarea><br><br>
+
+
+
+
+    <input type="submit" value="Submit">
+    <input type="Reset"  value="reset">
+  </form>
+  </fieldset>
+
+<body>
+    
+</body>
+</html>
