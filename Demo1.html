@@ -718,6 +718,147 @@ your browser does not support the video tag.
     <input type="date" id="dob" name="dob" required><br><br>
     <input type="submit" value="Submit">
   </form>
+<hr>
+
+
+    <h2> Radio Button</h2>
+    <p><strong>Description:</strong> Used to select only <u>one option</u> from a group.</p>
+    <pre>
+&lt;label&gt;&lt;input type="radio" name="gender" value="male"&gt; Male&lt;/label&gt;
+&lt;label&gt;&lt;input type="radio" name="gender" value="female"&gt; Female&lt;/label&gt;
+&lt;label&gt;&lt;input type="radio" name="gender" value="other"&gt; Other&lt;/label&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <label><input type="radio" name="gender" value="male"> Male</label><br>
+    <label><input type="radio" name="gender" value="female"> Female</label><br>
+    <label><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+    <hr>
+
+    <h2> Checkbox</h2>
+    <p><strong>Description:</strong> Used to select <u>multiple options</u>.</p>
+    <pre>
+&lt;label&gt;&lt;input type="checkbox" name="hobby" value="reading"&gt; Reading&lt;/label&gt;
+&lt;label&gt;&lt;input type="checkbox" name="hobby" value="music"&gt; Music&lt;/label&gt;
+&lt;label&gt;&lt;input type="checkbox" name="hobby" value="sports"&gt; Sports&lt;/label&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <label><input type="checkbox" name="hobby" value="reading"> Reading</label><br>
+    <label><input type="checkbox" name="hobby" value="music"> Music</label><br>
+    <label><input type="checkbox" name="hobby" value="sports"> Sports</label><br><br>
+
+    <hr>
+
+    <h2> File Upload</h2>
+    <p><strong>Description:</strong> Used to upload a file from user's device.</p>
+    <pre>
+&lt;input type="file" name="resume"&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <input type="file" name="resume"><br><br>
+
+    <hr>
+
+    <h2> Range</h2>
+    <p><strong>Description:</strong> Slider to choose a numeric value in range.</p>
+    <pre>
+&lt;input type="range" name="volume" min="0" max="100"&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <input type="range" name="volume" min="0" max="100"><br><br>
+
+    <hr>
+
+    <h2> Dropdown List (Select)</h2>
+    <p><strong>Description:</strong> Dropdown to select one option from list.</p>
+    <pre>
+&lt;select name="country"&gt;
+  &lt;option value="india"&gt;India&lt;/option&gt;
+  &lt;option value="usa"&gt;USA&lt;/option&gt;
+  &lt;option value="uk"&gt;UK&lt;/option&gt;
+&lt;/select&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <select name="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select><br><br>
+
+    <hr>
+
+    <h2> Multiline Text Field (Textarea)</h2>
+    <p><strong>Description:</strong> Used for longer text input like feedback or comments.</p>
+    <pre>
+&lt;textarea name="feedback" rows="4" cols="40"&gt;&lt;/textarea&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <textarea name="feedback" rows="4" cols="40" placeholder="Enter your feedback here..."></textarea><br><br>
+
+    <hr>
+
+    <h2> Buttons</h2>
+    <p><strong>Description:</strong> Buttons to perform actions like submit, reset, or click.</p>
+    <pre>
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="reset" value="Reset"&gt;
+&lt;button type="button"&gt;Click Me&lt;/button&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <form>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button type="button" onclick="alert('Button Clicked')">Click Me</button>
+    </form><br>
+
+    <hr>
+
+    <h2> Fieldset & Legend</h2>
+    <p><strong>Description:</strong> Groups related fields together under a legend.</p>
+    <pre>
+&lt;fieldset&gt;
+  &lt;legend&gt;Personal Info&lt;/legend&gt;
+  &lt;label&gt;Name:&lt;/label&gt;
+  &lt;input type="text" name="name"&gt;
+&lt;/fieldset&gt;
+    </pre>
+    <p><strong>Output:</strong></p>
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob">
+    </fieldset><br><br>
+
+    <hr>
+
+  <h2>Iframe Tag</h2>
+  <p><strong>Description:</strong> Used to embed another webpage inside the current HTML page.</p>
+  <pre>
+&lt;iframe src="https://www.example.com" width="300" height="200"&gt;&lt;/iframe&gt;
+  </pre>
+  <p><strong>Output:</strong></p>
+  <iframe src="https://www.example.com" width="300" height="200"></iframe>
+
+  <hr>
+   <h2>Pattern Attribute</h2>
+  <p><strong>Description:</strong> Used with &lt;input&gt; elements to validate input against a regular expression pattern.</p>
+  <pre>
+&lt;form&gt;
+  &lt;label&gt;Enter 4-digit PIN:&lt;/label&gt;
+  &lt;input type="text" pattern="\d{4}" title="Enter a 4-digit PIN" required&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+  </pre>
+  <p><strong>Output:</strong></p>
+  <form>
+    <label>Enter 4-digit PIN:</label>
+    <input type="text" pattern="\d{4}" title="Enter a 4-digit PIN" required>
+    <input type="submit">
+  </form>
+
+
 
 </body>
 </html>
