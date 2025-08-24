@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color:orange;
+           
+
+        }
+        .div{
+             gap:10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+           @media (max-width:300px) {
+              .div{
+                display:flex;
+                flex-direction:column;
+              }
+            
+           }
+           
+        
+    </style>
+</head>
+<body>
+    <div class="div">
+
+        <div id="div1" class="box">1 </div>
+        <div id="div2" class="box">2 </div>
+        <div id="div3" class="box">3 </div>
+        <div id="div4" class="box">4 </div>
+        
+    </div>
+    
+</body>
+</html>
